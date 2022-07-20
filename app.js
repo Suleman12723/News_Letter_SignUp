@@ -38,7 +38,7 @@ app.post("/", function (req, res) {
 
   const options = {
     method: "POST",
-    auth: "suleman:" + process.env.API_KEY,
+    auth: "Your MAILCHIMP NAME:" + process.env.API_KEY,
   };
   const request = https.request(url, options, (response) => {
     if (response.statusCode === 200) {
